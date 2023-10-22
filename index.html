@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(19, 40, 59);
+
+        }
+
+        header{
+            background-color: rgb(58, 126, 27);
+            color: aliceblue;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+
+        .profile-picture{
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 100px;
+        }
+
+        nav{
+            background-color: rgba(247, 155, 122, 0.849);
+            color: aliceblue;
+            text-align: center;
+        }
+
+        nav ul{
+            list-style-type: none;
+            padding: 2px;
+        }
+
+        nav ul li{
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(23, 40, 54);
+        }
+
+        .section-content{
+            background-color: aliceblue;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+        }
+
+        footer{
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: aliceblue;
+        }
+
+    </style>
+
+    <script>
+        function myFunction()
+        {
+            let e=document.getElementById("#about");
+            e.scrollIntoView({
+                block: 'start',behavior: 'smooth',inline:'start'
+            });
+        }
+
+        function myFunction()
+        {
+            let e=document.getElementById("#education");
+            e.scrollIntoView({
+                block: 'start',behavior: 'smooth',inline:'start'
+            });
+        }
+
+        function myFunction()
+        {
+            let e=document.getElementById("#skills");
+            e.scrollIntoView({
+                block: 'start',behavior: 'smooth',inline:'start'
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="pricy-profile.jpg" alt="My profile picture" class="profile-picture">
+            <h1>Sahaya Barbaral Pricy</h1>
+            <p>Interested  on Learning</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About me</h2>
+            <p>Hello! This is Sahaya Barbaral Pricy M and I am a Computer Science Student..</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Government Arts and Science College for Women, Sathankulam - I am studying III B.Sc. Computer Science</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Machine Learning</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sahaya Barbaral Pricy M</p>
+    </footer>
+
+</body>
+</html>
